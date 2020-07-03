@@ -1,15 +1,17 @@
 # coding:utf-8
 import os
-import sys
-import glob
 
 def Scopus2HistCite():
     try:
         #files = glob.glob('woc.txt')
         file = 'wos.txt'
         if os.path.isfile(file):
-            print("You are going to correct Scopus2WOS data")
+            print("You are going to transforming the Scopus format to WOS format!")
             Scopus_file = file
+            strcmd = 'PowerShell -Command "& {get-content wos.txt -encoding utf8 | set-content wos1.txt -encoding utf8}"'
+            os.system(strcmd) ## change the wos.txt as utf-8 format
+            os.system('del wos.txt')
+            os.system('move wos1.txt wos.txt')
         else:
             raise Exception("No file spcified")
 
