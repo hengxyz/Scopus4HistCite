@@ -1,15 +1,29 @@
 # coding:utf-8
 import os
+import time
 
 def Scopus2HistCite():
     try:
         #files = glob.glob('woc.txt')
+
+
         file = 'wos.txt'
         if os.path.isfile(file):
+            print('Delete the generated files!')
+            os.system('del *.dbf')
+            os.system('del *.dbt')
+            os.system('del *.ntx')
+            #os.system('move wos.txt ..\wos.txt') ##windows is \
+            os.system('del temp.txt')
+            os.system('del abstract.txt')
+            os.system('del scopus.txt')
+            #os.system('move ..\wos.txt wos.txt')
+            #time.sleep(10)
             print("You are going to transforming the Scopus format to WOS format!")
             Scopus_file = file
             strcmd = 'PowerShell -Command "& {get-content wos.txt -encoding utf8 | set-content wos1.txt -encoding utf8}"'
             os.system(strcmd) ## change the wos.txt as utf-8 format
+            time.sleep(1)
             os.system('del wos.txt')
             os.system('move wos1.txt wos.txt')
         else:
@@ -90,12 +104,6 @@ def Scopus2HistCite():
         with open(Scopus_file, 'w') as Scopus:
             Scopus.writelines(Lines)
 
-        os.system(('del *.dbf'))
-        os.system(('del *.dbt'))
-        os.system(('del *.ntx'))
-        os.system('move wos.txt wos.dat')
-        os.system(('del *.txt'))
-        os.system('move wos.dat wos.txt')
 
     except Exception as e:
         raise e
