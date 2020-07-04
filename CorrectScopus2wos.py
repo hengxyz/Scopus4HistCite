@@ -90,6 +90,13 @@ def Scopus2HistCite():
         with open(Scopus_file, 'w') as Scopus:
             Scopus.writelines(Lines)
 
+        os.system(('del *.dbf'))
+        os.system(('del *.dbt'))
+        os.system(('del *.ntx'))
+        os.system('move wos.txt wos.dat')
+        os.system(('del *.txt'))
+        os.system('move wos.dat wos.txt')
+
     except Exception as e:
         raise e
 
