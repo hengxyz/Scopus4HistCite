@@ -1,5 +1,5 @@
 # Scopus4HistCite
-Changing the format of the reference file *.ris exported from the Scopus to the format can be completely  analysed by HistCite.
+Changing the format of the reference file *.ris exported from the Scopus to the WOS format which can be completely  analysed by HistCite.
 
 ## Why Scopus4HistCite
 People can use Scopus4HistCite to transform the refences files exported from Scopus, i.e., scopus.ris, to the WOS format to do the complete reference analysis.
