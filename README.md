@@ -1,6 +1,16 @@
 # Scopus4HistCite
 Changing the format of the reference file *.ris exported from the Scopus to the format can be completely  analysed by HistCite.
 
-In this version, the key used for searching the local references is the paper title. If the paper title is the same, but the author name or year or volume or papge number are different between the orginal paper and the reference information, the the references' information will be corrected by the original paper information. This greatly improve the search accuracy comparing to using only author name and year to search local reference as the solution of Loet Leydesdorffhttps://www.leydesdorff.net/scopus/'
+## Why Scopus4HistCite
+People can use Scopus4HistCite to transform the refences files exported from Scopus, i.e., scopus.ris, to the WOS format to do the complete reference analysis.
 
-People can directly put the exported Scopus file scopus.ris in the same directory, and click the Scopus4HistCite.bat to finish the transformation of the Scopus to Wos. The obtained wos2.txt can be used to analyse the references by HistCite or HistCitePro.
+Since the solution of Loet Leydesdorffhttps://www.leydesdorff.net/scopus/' cannot transform the data in the wos for the local references analysis by HistCite, this solution can generate the complete WOS format data and calibrate the errors between the misused information such as author names, years, page number and volume number, which allow the HistCite or HistCitePro search the local references in a high accuracy.
+
+## How to use:
+1) Download the package;
+2) Put the exported Scopus file scopus.ris in the same directory, and click the Scopus4HistCite.bat; 
+3) The obtained wos2.txt can be used to analyse the references by HistCitePro (putting the wos2.txt in the TXT folder of HistCitePro).
+Then you can use HistCite to analyse your references in your domaines!
+
+
+
