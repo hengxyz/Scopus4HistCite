@@ -14,3 +14,9 @@ Then you can use HistCite to analyse your references in your domaines!
 
 
 
+### License
+This code is distributed under MIT LICENSE
+
+### Contact
+Zuheng Ming
+zuheng.ming@univ-lr.fr
