@@ -7,7 +7,7 @@ People can use Scopus4HistCite to transform the refences files exported from Sco
 Since the solution of Loet Leydesdorffhttps://www.leydesdorff.net/scopus/' cannot transform the data in the wos for the local references analysis by HistCite, this solution can generate the complete WOS format data and calibrate the errors between the misused information such as author names, years, page number and volume number, which allow the HistCite or HistCitePro (Author's tutorial https://www.youtube.com/watch?v=6EMwQGYazC0 and the website: https://zhuanlan.zhihu.com/p/20902898 (in Chinese)) search the local references in a high accuracy.
 
 ## How to use:
-1) Download the package;
+1) Download the package in Windows;
 2) Put the exported Scopus file scopus.ris in the same directory, and click the Scopus4HistCite.bat; 
 3) The obtained wos2.txt can be used to analyse the references by HistCitePro (putting the wos2.txt in the TXT folder of HistCitePro).
 Then you can use HistCite to analyse your references in your domaines!
