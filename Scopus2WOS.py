@@ -7,7 +7,7 @@ def Scopus2HistCite():
     try:
         #files = glob.glob('woc.txt')
 
-        Scopus_file = 'scopus_972.ris'
+        Scopus_file = 'scopus.ris'
 
         if not os.path.isfile(Scopus_file):
             raise Exception("No file spcified")
