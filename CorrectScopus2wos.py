@@ -44,12 +44,12 @@ def Scopus2HistCite():
                 if line[:2] == 'VL':
                     VL = line[3:-1]
                     if not VL:
-                        VL='0'
+                        VL='11'
                         line = line[:-1]+VL+'\n'
                 if line[:2] == 'BP':
                     BP = line[3:-1]
                     if not BP:
-                        BP='0'
+                        BP='11'
                         line = line[:-1] + BP + '\n'
                     dict_ref['%d'%i] = [author, year, VL, BP]
                     i += 1
