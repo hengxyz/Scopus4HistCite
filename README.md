@@ -10,7 +10,7 @@ Since the solution of Loet Leydesdorff https://www.leydesdorff.net/scopus/' cann
 1) Download the package in Windows;
 2) Put the exported Scopus file *.ris in the same directory (you can put serveral *.ris files under the directory, which allows Scopus to split the references in serveral *.ris files to export);
 3) Click the Scopus4HistCite.bat; (Or you can click the Scopus2WOS.exe and then click the CorrectScopus2wos_3.exe in case of the failure of Scopus4HistCite.bat)
-4) The obtained wos2.txt can be used to analyse the references by HistCitePro (putting the wos2.txt in the TXT folder of HistCitePro).
+4) Then copy the obtained wos2.txt in ../HistCitePro2.1/TXT.
 Then you can use HistCite to analyse your references in your domaines!
 
 
