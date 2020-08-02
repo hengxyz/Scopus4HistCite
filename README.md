@@ -4,7 +4,7 @@ Changing the format of the reference file *.ris exported from the Scopus to the 
 ## Why Scopus4HistCite
 People can use Scopus4HistCite to transform the refences files exported from Scopus, i.e., scopus.ris, to the WOS format to do the complete reference analysis.
 
-Since the solution of Loet Leydesdorff https://www.leydesdorff.net/scopus/' cannot transform the data in the wos for the local references analysis by HistCite, this solution can generate the complete WOS format data and calibrate the errors of the incorrect or incomplete information such as the author names, years, page numbers and volume numbers, which allow the HistCite or HistCitePro (Thanks to the Author's tutorial https://www.youtube.com/watch?v=6EMwQGYazC0 and the website: https://zhuanlan.zhihu.com/p/20902898 (in Chinese)) search the local references in a high accuracy and employ the local references analysis or draw the HistCite graph.
+Since the solution of Loet Leydesdorff https://www.leydesdorff.net/scopus/' cannot transform the data exported by the Scopus into the WOS format for the local references analysis by HistCite, this solution can transform the *.ris exported from Scopus to the complete WOS format data and calibrate the errors of the incorrect or incomplete information such as the author names, years, page numbers and volume numbers, which allows the HistCite or HistCitePro (Thanks to the Author's tutorial https://www.youtube.com/watch?v=6EMwQGYazC0 and the website: https://zhuanlan.zhihu.com/p/20902898 (in Chinese)) search the local references in a high accuracy. And employ the local references analysis or draw the HistCite graph.
 
 ## How to use:
 1) Download the package in Windows;
