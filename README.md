@@ -8,7 +8,7 @@ Since the solution of Loet Leydesdorff https://www.leydesdorff.net/scopus/' cann
 
 ## How to use:
 1) Download the package in Windows;
-2) Put the exported Scopus file *.ris in the same directory (you can put serveral *.ris files under the directory, which allows Scopus to split the references in serveral *.ris files to export);
+2) Put the exported Scopus file *.ris in the same directory (you can put serveral *.ris files under the directory, in case of Scopus splits the references in serveral *.ris files to export);
 3) Click the Scopus4HistCite.bat; (Or you can click the Scopus2WOS.exe and then click the CorrectScopus2wos_3.exe in case of the failure of Scopus4HistCite.bat)
 4) Copy the obtained wos2.txt to ./HistCitePro2.1/TXT/;
 
