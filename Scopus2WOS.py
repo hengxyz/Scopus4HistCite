@@ -260,21 +260,28 @@ def Scopus2HistCite():
                             idx_ti = len(line)-line[::-1].index(',.')-1
                         else:
                             ti = docname
+                            idx_ti = ''
                         idx_docname = line.index('%s' % year)
                         if idx_docname:
-                            ti = line[idx_ti+1:idx_docname-1]
-                            if ti == ' ' :
-                                line_ti = line[idx_docname+5:]
-                                if ',' in line_ti:
-                                    ti = line_ti[: line_ti.index(',')]
-                                else:
-                                    ti = ''
-                        else:
-                            line_ti = line[idx_ti+1:]
-                            if ',' in line_ti:
-                                ti = line_ti[1: line_ti.index(',')]
+                            if idx_ti:
+                                ti = line[idx_ti+1:idx_docname-1]
+                                if ti == ' ' :
+                                    line_ti = line[idx_docname+5:]
+                                    if ',' in line_ti:
+                                        ti = line_ti[: line_ti.index(',')]
+                                    else:
+                                        ti = ''
                             else:
                                 ti = ''
+                        else:
+                            if idx_ti == '':
+                                ti = ''
+                            else:
+                                line_ti = line[idx_ti+1:]
+                                if ',' in line_ti:
+                                    ti = line_ti[1: line_ti.index(',')]
+                                else:
+                                    ti = ''
 
 
                         lines_CR_wos.append([name, year, docname, volume, page, ti])
